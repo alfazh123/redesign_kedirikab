@@ -146,7 +146,7 @@ export default function Home() {
                             elit. Quisquam, voluptatibus.
                         </p>
                     </div>
-                    <div className="flex item-center justify-center md:p-10">
+                    <div className="flex item-center justify-center md:p-10 ">
                         <Slider className="bg-slate-100" />
                     </div>
                 </div>
