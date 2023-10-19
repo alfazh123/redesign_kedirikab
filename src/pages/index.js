@@ -289,23 +289,64 @@ export default function Home() {
                     >
                         5
                     </a>
-                </div>
+                </div> */}
 
-                <div className="card card-side bg-base-100 shadow-xl mx-40 h-60 mb-20 lg:px-60 py-12">
+                {/* <div className="card card-side bg-base-100 shadow-xl mx-40 h-60 mb-20">
                     <figure className="">
-                        <Image src="" width={400} height={100} alt="Movie" />
+                        <Image src={src} width={400} height={100} alt="Movie" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">haha</h2>
+                        <h2 className="card-title">{title}</h2>
                         <ul>
-                            <li>hehe</li>
-                            <li>hehe</li>
-                            <li>hehe</li>
-                            <li>hehe</li>
-                            <li>hehe</li>
+                            <li>
+                                <a href={link1}>{desc1}</a>
+                            </li>
+                            <li>
+                                <a href={link2}>{desc2}</a>
+                            </li>
+                            <li>
+                                <a href={link3}>{desc3}</a>
+                            </li>
+                            <li>
+                                <a href={link4}>{desc4}</a>
+                            </li>
+                            <li>
+                                <a href={link5}>{desc5}</a>
+                            </li>
                         </ul>
                     </div>
-                </div> */}
+                </div>
+            </div>
+
+            <div className="flex md:hidden">
+                <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                    <figure>
+                        <Image src={src} width={400} height={100} alt="Shoes" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">{title}</h2>
+                        <ul>
+                            <li>
+                                <a href={link1}>{desc1}</a>
+                            </li>
+                            <li>
+                                <a href={link2}>{desc2}</a>
+                            </li>
+                            <li>
+                                <a href={link3}>{desc3}</a>
+                            </li>
+                            <li>
+                                <a href={link4}>{desc4}</a>
+                            </li>
+                            <li>
+                                <a href={link5}>{desc5}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> */}
+
+                <div></div>
             </div>
 
             <Footer />
