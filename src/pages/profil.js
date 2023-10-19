@@ -6,7 +6,9 @@ import Footer from '@/component/footer';
 export default function Profil() {
     return (
         <main>
-            <div className="flex flex-col bg-gradient-to-t from-cyan-700 to-slate-300 text-slate-800 p-10 min-h-screen ">
+            <Navbar />
+
+            <div className="flex flex-col bg-gradient-to-t from-cyan-700 to-slate-300 text-slate-800 p-10 min-h-screen">
                 <h1 className=" flex text-4xl font-bold md:mx-20  my-5">
                     Profil Kabupaten
                 </h1>
