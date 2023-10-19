@@ -1,10 +1,12 @@
 import React from 'react';
 import CardFasilitasList from '@/component/cardFasilitasList';
 import Footer from '@/component/footer';
+import Navbar from '@/component/navbar';
 
 export default function Layanan() {
     return (
         <div className="flex flex-col justify-center bg-gradient-to-t from-cyan-700 to-slate-300 min-h-screen">
+            <Navbar />
             <h1 className="text-slate-800 text-4xl font-bold m-10">
                 Halaman Fasilitas
             </h1>
