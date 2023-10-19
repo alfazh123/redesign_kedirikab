@@ -3,10 +3,12 @@ import CardBerita from '@/component/cardBerita';
 import CardBeritaVertikal from '@/component/cardBeritaVertikal';
 import Footer from '@/component/footer';
 import Link from 'next/link';
+import Navbar from '@/component/navbar';
 
 export default function Berita() {
     return (
         <main>
+            <Navbar />
             <div className="bg-gradient-to-t from-cyan-700 to-slate-300 text-black min-h-screen">
                 <h1 className="md:text-4xl text-2xl font-bold md:mx-32 mx-5 pt-5 md:pt-20">
                     Halaman Berita
