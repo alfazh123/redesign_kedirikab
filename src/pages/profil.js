@@ -1,11 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import Navbar from '@/component/navbar';
+import Footer from '@/component/footer';
 
 export default function Profil() {
     return (
         <main>
             <div className="flex flex-col bg-gradient-to-t from-cyan-700 to-slate-300 text-slate-800 p-10 min-h-screen ">
-                <h1 className=" flex text-4xl font-bold mx-20 my-5">
+                <h1 className=" flex text-4xl font-bold md:mx-20  my-5">
                     Profil Kabupaten
                 </h1>
 
@@ -62,10 +64,10 @@ export default function Profil() {
                         />
 
                         <div className="text-slate-900 ">
-                            <h1 className="flex justify-center font-bold text-6xl mb-2">
+                            <h1 className="flex justify-center font-bold md:text-6xl text-2xl mb-2">
                                 Sejarah
                             </h1>
-                            <p className="flex text-xl justify-center md:ml-10 pb-32">
+                            <p className="flex md:text-xl text-md justify-center md:ml-10 pb-32">
                                 Kediri berasal dari “kedi” yang artinya mandul
                                 atau suci dan “diri” yang artinya Adeg,
                                 Angdhiri, menghadiri atau menjadi Raja (bahasa
@@ -85,7 +87,7 @@ export default function Profil() {
                     </div>
                 </div>
 
-                <div className=" min-h-screen text-slate-900">
+                <div className=" text-slate-900">
                     <h1 className="flex justify-center font-bold text-6xl mb-2">
                         Logo
                     </h1>
@@ -98,7 +100,7 @@ export default function Profil() {
                             height={300}
                         />
 
-                        <ul className="mx-10">
+                        <ul className="md:mx-10 mx-">
                             <li>
                                 <h1 className="text-xl font-bold">
                                     Bintang Sudut Lima
@@ -161,6 +163,8 @@ export default function Profil() {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </main>
     );
 }
