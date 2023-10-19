@@ -4,6 +4,7 @@ import Slider from '../component/slider';
 import CardPotensi from '../component/cardPotensi';
 import Footer from '@/component/footer';
 import Link from 'next/link';
+import CardFasilitasList from '@/component/cardFasilitasList';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -70,55 +71,65 @@ export default function Home() {
                     <div className="flex flex-col items-center mx-10 ">
                         <ul className="flex lg:flex-row flex-col">
                             <li className="my-5">
-                                <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 shadow-xl sm:w-72 bg-white">
-                                    <figure>
-                                        <img
-                                            src="https://berita.kedirikab.go.id/asset/foto_berita/KPK_(3).jpeg"
-                                            alt="Shoes"
-                                        />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title font-medium text-black">
-                                            KPK RI Gelar Sosialisasi Anti
-                                            Korupsi
-                                        </h3>
+                                <Link href="/berita/berita2">
+                                    <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 shadow-xl sm:w-72 bg-white">
+                                        <figure>
+                                            <img
+                                                src="https://berita.kedirikab.go.id/asset/foto_berita/KPK_(3).jpeg"
+                                                alt="KPK RI Gelar Sosialisasi Anti
+                                            Korupsi"
+                                            />
+                                        </figure>
+                                        <div className="card-body">
+                                            <h3 className="card-title font-medium text-black">
+                                                KPK RI Gelar Sosialisasi Anti
+                                                Korupsi
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </li>
 
                             <li className="my-5">
-                                <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
-                                    <figure>
-                                        <img
-                                            src="https://berita.kedirikab.go.id/asset/foto_berita/bpsdm_(2).jpeg"
-                                            alt="Shoes"
-                                        />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title font-medium text-black">
-                                            Antisipasi Dampak Kekeringan,
+                                <Link href="/berita/berita3">
+                                    <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
+                                        <figure>
+                                            <img
+                                                src="https://berita.kedirikab.go.id/asset/foto_berita/bpsdm_(2).jpeg"
+                                                alt="Antisipasi Dampak Kekeringan,
                                             Gubernur Khofifah Harap Kepala
-                                            Daerah Upayakan Mitigasi Bencana
-                                        </h3>
+                                            Daerah Upayakan Mitigasi Bencana"
+                                            />
+                                        </figure>
+                                        <div className="card-body">
+                                            <h3 className="card-title font-medium text-black">
+                                                Antisipasi Dampak Kekeringan,
+                                                Gubernur Khofifah Harap Kepala
+                                                Daerah Upayakan Mitigasi Bencana
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </li>
 
                             <li className="my-5">
-                                <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
-                                    <figure>
-                                        <img
-                                            src="https://berita.kedirikab.go.id/asset/foto_berita/mangga_(3).jpeg"
-                                            alt="Shoes"
-                                        />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title font-medium text-black">
-                                            Pesan Mas Dhito Bagi Petani Mangga
-                                            Podang: Jangan Di Booster
-                                        </h3>
+                                <Link href="/berita/berita1">
+                                    <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
+                                        <figure>
+                                            <img
+                                                src="https://berita.kedirikab.go.id/asset/foto_berita/mangga_(3).jpeg"
+                                                alt="Pesan Mas Dhito Bagi Petani Mangga
+                                            Podang: Jangan Di Booster"
+                                            />
+                                        </figure>
+                                        <div className="card-body">
+                                            <h3 className="card-title font-medium text-black">
+                                                Pesan Mas Dhito Bagi Petani
+                                                Mangga Podang: Jangan Di Booster
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -126,7 +137,7 @@ export default function Home() {
 
                 {/*potensi section*/}
                 <div className="">
-                    <div className=" px-20 pt-20 flex flex-col items-center justify-center text-slate-800">
+                    <div className=" px-20 pt-20 flex flex-col items-center justify-center text-slate-800 ">
                         <h1 className="text-4xl font-bold text-center mt-5 bg-teal-">
                             Potensi Daerah
                         </h1>
@@ -139,6 +150,162 @@ export default function Home() {
                         <Slider className="bg-slate-100" />
                     </div>
                 </div>
+
+                {/* <div className="hidden md:flex carousel carousel-left min-w-64 max-w-md  space-x-4 bg-slate-100 shadow-xl rounded-box">
+                    <div id="item1" className="carousel-item">
+                        <CardPotensi
+                            title="Pertanian"
+                            description="Lihat selengkapnya"
+                            number={1}
+                        />
+                    </div>
+                    <div id="item2" className="carousel-item">
+                        <CardPotensi
+                            title="Perkebunan"
+                            description="Lihat selengkapnya"
+                            number={2}
+                        />
+                    </div>
+                    <div id="item3" className="carousel-item">
+                        <CardPotensi
+                            title="Perikanan"
+                            description="Lorem ipsum dolor sit."
+                            number={3}
+                        />
+                    </div>
+                    <div id="item4" className="carousel-item">
+                        <CardPotensi
+                            title="Pariwisata"
+                            description="Lorem ipsum dolor sit."
+                            number={4}
+                        />
+                    </div>
+                    <div id="item5" className="carousel-item">
+                        <CardPotensi
+                            title="Produk Unggulan"
+                            description="Lorem ipsum dolor sit."
+                            number={5}
+                        />
+                    </div>
+                </div>
+                <div className="hidden md:flex justify-center items-center mt-4">
+                    <a
+                        href="#item1"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        1
+                    </a>
+                    <a
+                        href="#item2"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        2
+                    </a>
+                    <a
+                        href="#item3"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        3
+                    </a>
+                    <a
+                        href="#item4"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        4
+                    </a>
+                    <a
+                        href="#item5"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        5
+                    </a>
+                </div>
+
+                <div className="flex md:hidden h-32 carousel carousel-vertical rounded-box ">
+                    <div id="item6" className="carousel-item h-full">
+                        <CardPotensi
+                            title="Pertanian"
+                            description="Lorem ipsum dolor sit."
+                            number={1}
+                        />
+                    </div>
+                    <div id="item7" className="carousel-item h-full">
+                        <CardPotensi
+                            title="Perkebunan"
+                            description="Lorem ipsum dolor sit."
+                            number={2}
+                        />
+                    </div>
+                    <div id="item8" className="carousel-item h-full">
+                        <CardPotensi
+                            title="Perikanan"
+                            description="Lorem ipsum dolor sit."
+                            number={3}
+                        />
+                    </div>
+                    <div id="item9" className="carousel-item h-full">
+                        <CardPotensi
+                            title="Pariwisata"
+                            description="Lorem ipsum dolor sit."
+                            number={4}
+                        />
+                    </div>
+                    <div id="item10" className="carousel-item h-full">
+                        <CardPotensi
+                            title="Produk Unggulan"
+                            description="Lorem ipsum dolor sit."
+                            number={5}
+                        />
+                    </div>
+                </div>
+                <div className="flex md:hidden justify-center items-center mt-4">
+                    <a
+                        href="#item6"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        1
+                    </a>
+                    <a
+                        href="#item7"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        2
+                    </a>
+                    <a
+                        href="#item8"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        3
+                    </a>
+                    <a
+                        href="#item9"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        4
+                    </a>
+                    <a
+                        href="#item10"
+                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
+                    >
+                        5
+                    </a>
+                </div>
+
+                <div className="card card-side bg-base-100 shadow-xl mx-40 h-60 mb-20 lg:px-60 py-12">
+                    <figure className="">
+                        <Image src="" width={400} height={100} alt="Movie" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">haha</h2>
+                        <ul>
+                            <li>hehe</li>
+                            <li>hehe</li>
+                            <li>hehe</li>
+                            <li>hehe</li>
+                            <li>hehe</li>
+                        </ul>
+                    </div>
+                </div> */}
             </div>
 
             <Footer />
