@@ -17,14 +17,14 @@ export default function Home() {
                     src="https://4.bp.blogspot.com/-5Mt5bpL1nCk/T_Qc0pNnAxI/AAAAAAAAAI4/8pteJJpclcE/s1600/Kediri_East_Java.jpg"
                 /> */}
                 <Image
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute min-h-screen inset-0 h-full w-full object-cover"
                     src="/kediri.png"
                     alt="Picture of the author"
                     layout="fill"
                     objectFit="cover"
                     quality={100}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-cyan-700 from-5%  to-slate-300 opacity-90"></div>
+                <div className="absolute inset-0 min-h-screen bg-gradient-to-t from-cyan-700 from-5%  to-slate-300 opacity-90"></div>
 
                 <h1 className="flex h-full relative items-center justify-center text-6xl font-bold text-white">
                     Pemkab Kediri
@@ -146,7 +146,7 @@ export default function Home() {
                             elit. Quisquam, voluptatibus.
                         </p>
                     </div>
-                    <div className="flex item-center justify-center md:p-10 ">
+                    <div className="flex item-center justify-center md:p-10">
                         <Slider className="bg-slate-100" />
                     </div>
                 </div>

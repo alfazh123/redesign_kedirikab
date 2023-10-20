@@ -6,29 +6,29 @@ import BeritaPage from '@/component/beritaPage';
 export default function berita1() {
     return (
         <div>
-            <div className="flex bg-gradient-to-t from-cyan-700 to-slate-300 min-h-screen justify-center items-center">
+            <div className="flex bg-gradient-to-b from-cyan-700 to-slate-300 min-h-screen justify-center items-center">
                 <div className=" text-slate-900 md:mx-40 mx-10 mb-10">
-                    <h1 className="font-bold text-2xl">
+                    <h1 className="font-bold text-2xl pb-5">
                         Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di
                         Booster
                     </h1>
 
                     <div className="flex md:flex-row flex-col justify-center items-center">
                         <Image
-                            className="md:mx-2 my-2"
-                            src="/kediri.png"
+                            className="md:mx-2 my-3"
+                            src="/berita1_1.png"
                             width={300}
                             height={300}
                         />
                         <Image
-                            className="md:mx-2 my-2"
-                            src="/kediri.png"
+                            className="md:mx-2 my-3"
+                            src="/berita1_2.png"
                             width={300}
                             height={300}
                         />
                     </div>
 
-                    <p>
+                    <p className="mt-5">
                         Kediri - Memasuki musim panen mangga podang, Bupati
                         Hanindhito Himawan Pramana melakukan pengecekan Pasar
                         Buah Banyakan, Kamis (5/10/2023) sore. Kedatangan orang

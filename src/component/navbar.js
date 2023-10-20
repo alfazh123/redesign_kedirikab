@@ -1,12 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <div className="flex justify-between w-full h-0 bg-slate-300 text-slate-900">
+        <div className="flex justify-between items-center w-full bg-slate-300 text-slate-900">
             <div className="flex m-3">
-                <Image src="" width={100} height={10} alt="Logo" />
-                <h1 className="text-xl font-bold">Kediri Kabupaten</h1>
+                <Link href="/" className="flex">
+                    <Image
+                        src="/LogoNav.png"
+                        width={50}
+                        height={10}
+                        alt="Logo"
+                        className="mx-2"
+                    />
+                    <h1 className="text-xl font-bold flex justify-center items-center">
+                        Kediri Kabupaten
+                    </h1>
+                </Link>
             </div>
 
             <div>
