@@ -21,7 +21,7 @@ export default function Navbar() {
             </div>
 
             <div>
-                <div className="dropdown dropdown-end items-end text-slate-300">
+                <div className="dropdown dropdown-end items-end text-slate-300 mr-10">
                     <label tabIndex={0} className="btn m-1">
                         Menu
                     </label>
@@ -30,10 +30,13 @@ export default function Navbar() {
                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                         <li>
-                            <a>Item 1</a>
+                            <Link href="/profil">Profil</Link>
                         </li>
                         <li>
-                            <a>Item 2</a>
+                            <Link href="/berita">Fasilitas</Link>
+                        </li>
+                        <li>
+                            <Link href="/fasilitas">Fasilitas</Link>
                         </li>
                     </ul>
                 </div>

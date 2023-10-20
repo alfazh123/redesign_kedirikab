@@ -2,10 +2,12 @@ import React from 'react';
 import Footer from '@/component/footer';
 import { Label } from 'flowbite-react';
 import DatePicker from '@/component/datePicker';
+import Navbar from '@/component/navbar';
 
 export default function Lapor() {
     return (
         <div>
+            <Navbar />
             <div className="flex justify-center bg-gradient-to-b from-cyan-700 to-slate-300 min-h-screen pt-20 text-slate-100">
                 <div className="flex flex-col items-center w-1/2 pb-20">
                     <h1 className="text-4xl font-bold pb-3">Lapor</h1>

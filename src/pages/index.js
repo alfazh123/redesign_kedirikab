@@ -11,11 +11,12 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
     return (
         <main className={` ${inter.className}`}>
-            <div className="min-h-screen flex flex-col text-center justify-center ">
+            <div className="min-h-screen flex flex-col text-center justify-center">
                 {/* <img
                     className="absolute inset-0 h-full w-full object-cover"
                     src="https://4.bp.blogspot.com/-5Mt5bpL1nCk/T_Qc0pNnAxI/AAAAAAAAAI4/8pteJJpclcE/s1600/Kediri_East_Java.jpg"
                 /> */}
+
                 <Image
                     className="absolute min-h-screen inset-0 h-full w-full object-cover"
                     src="/kediri.png"
@@ -25,6 +26,14 @@ export default function Home() {
                     quality={100}
                 />
                 <div className="absolute inset-0 min-h-screen bg-gradient-to-t from-cyan-700 from-5%  to-slate-300 opacity-90"></div>
+
+                <Image
+                    src="/LogoNav.png"
+                    width={50}
+                    height={10}
+                    alt="Logo"
+                    className="flex h-full relative justify-center items-center mx-auto "
+                />
 
                 <h1 className="flex h-full relative items-center justify-center text-6xl font-bold text-white">
                     Pemkab Kediri
