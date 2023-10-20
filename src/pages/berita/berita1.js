@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Footer from '@/component/footer';
 import BeritaPage from '@/component/beritaPage';
+import Navbar from '@/component/navbar';
 
 export default function berita1() {
     return (
         <div>
+            <Navbar />
             <div className="flex bg-gradient-to-b from-cyan-700 to-slate-300 min-h-screen justify-center items-center">
                 <div className=" text-slate-900 md:mx-40 mx-10 mb-10">
                     <h1 className="font-bold text-2xl pb-5">
