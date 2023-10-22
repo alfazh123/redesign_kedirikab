@@ -20,12 +20,6 @@ export default function berita2() {
                             width={300}
                             height={300}
                         />
-                        <Image
-                            className="md:mx-2 my-2"
-                            src="/berita2_2.png"
-                            width={300}
-                            height={300}
-                        />
                     </div>
 
                     <p>
@@ -48,6 +42,15 @@ export default function berita2() {
                         kegiatan pencegahan dan pemberantasan korupsi",
                         terangnya.
                     </p>
+
+                    <div className="flex md:flex-row flex-col justify-center items-center">
+                        <Image
+                            className="md:mx-2 my-2"
+                            src="/berita2_2.png"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
 
                     <p>
                         Sebagai catatan, lanjut Mbak Dewi, sejak tahun 2021

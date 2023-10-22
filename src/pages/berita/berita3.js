@@ -21,12 +21,6 @@ export default function berita2() {
                             width={300}
                             height={300}
                         />
-                        <Image
-                            className="md:mx-2 my-2"
-                            src="/berita3_2.png"
-                            width={300}
-                            height={300}
-                        />
                     </div>
 
                     <p>
@@ -49,6 +43,15 @@ export default function berita2() {
                         pentingnya mitigasi dan pemetaan status kebencanaan di
                         tiap-tiap wilayahnya secara tepat.
                     </p>
+
+                    <div className="flex md:flex-row flex-col justify-center items-center">
+                        <Image
+                            className="md:mx-2 my-2"
+                            src="/berita3_2.png"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
 
                     <p>
                         Ini penting untuk penanganan bencana, termasuk untuk

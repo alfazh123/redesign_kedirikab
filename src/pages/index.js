@@ -1,16 +1,19 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Slider from '../component/slider';
-import CardPotensi from '../component/cardPotensi';
 import Footer from '@/component/footer';
 import Link from 'next/link';
-import CardFasilitasList from '@/component/cardFasilitasList';
+import Head from 'next/head';
+import CardPotensi from '@/component/cardPotensi';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
     return (
         <main className={` ${inter.className}`}>
+            <Head>
+                <title>Kediri Kabupaten</title>
+            </Head>
             <div className="min-h-screen flex flex-col text-center justify-center">
                 {/* <img
                     className="absolute inset-0 h-full w-full object-cover"
@@ -20,6 +23,7 @@ export default function Home() {
                 <Image
                     className="absolute min-h-screen inset-0 h-full w-full object-cover"
                     src="/kediri.png"
+                    id="bg-hero-landingpage-image"
                     alt="Picture of the author"
                     layout="fill"
                     objectFit="cover"
@@ -27,18 +31,27 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 min-h-screen bg-gradient-to-t from-cyan-700 from-5%  to-slate-300 opacity-90"></div>
 
-                <Image
-                    src="/LogoNav.png"
-                    width={50}
-                    height={10}
-                    alt="Logo"
-                    className="flex h-full relative justify-center items-center mx-auto "
-                />
+                <Link href="/">
+                    <Image
+                        src="/LogoNav.png"
+                        id="logo-instansi"
+                        width={50}
+                        height={10}
+                        alt="Logo"
+                        className="flex h-full relative justify-center items-center mx-auto "
+                    />
+                </Link>
 
-                <h1 className="flex h-full relative items-center justify-center text-6xl font-bold text-white">
+                <h1
+                    id="hero"
+                    className="flex h-full relative items-center justify-center text-6xl font-bold text-white"
+                >
                     Pemkab Kediri
                 </h1>
-                <ul className="flex text-center items-center mx-auto justify-center max-w-md relative mt-6">
+                <ul
+                    id="link-content"
+                    className="flex text-center items-center mx-auto justify-center max-w-md relative mt-6"
+                >
                     <li className="md:mx-4 sm:mx-1 mx-1">
                         <Link href="/berita">
                             <button className="btn btn-outline text-white hover:bg-white hover:text-gray-700">
@@ -65,7 +78,10 @@ export default function Home() {
                 </ul>
             </div>
 
-            <div className="bg-gradient-to-b from-cyan-700 to-slate-300 ">
+            <div
+                id="berita"
+                className="bg-gradient-to-b from-cyan-700 to-slate-300 "
+            >
                 <div className="">
                     <div className="flex flex-col items-center justify-center text-slate-100">
                         <h1 className="text-4xl font-bold text-center mt-20">
@@ -77,7 +93,10 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center mx-10 ">
+                    <div
+                        id="berita-utama"
+                        className="flex flex-col items-center mx-10 "
+                    >
                         <ul className="flex lg:flex-row flex-col">
                             <li className="my-5">
                                 <Link href="/berita/berita2">
@@ -85,8 +104,7 @@ export default function Home() {
                                         <figure>
                                             <img
                                                 src="https://berita.kedirikab.go.id/asset/foto_berita/KPK_(3).jpeg"
-                                                alt="KPK RI Gelar Sosialisasi Anti
-                                            Korupsi"
+                                                alt="berita1"
                                             />
                                         </figure>
                                         <div className="card-body">
@@ -105,9 +123,7 @@ export default function Home() {
                                         <figure>
                                             <img
                                                 src="https://berita.kedirikab.go.id/asset/foto_berita/bpsdm_(2).jpeg"
-                                                alt="Antisipasi Dampak Kekeringan,
-                                            Gubernur Khofifah Harap Kepala
-                                            Daerah Upayakan Mitigasi Bencana"
+                                                alt="berita2"
                                             />
                                         </figure>
                                         <div className="card-body">
@@ -127,8 +143,7 @@ export default function Home() {
                                         <figure>
                                             <img
                                                 src="https://berita.kedirikab.go.id/asset/foto_berita/mangga_(3).jpeg"
-                                                alt="Pesan Mas Dhito Bagi Petani Mangga
-                                            Podang: Jangan Di Booster"
+                                                alt="berita3"
                                             />
                                         </figure>
                                         <div className="card-body">
@@ -145,7 +160,7 @@ export default function Home() {
                 </div>
 
                 {/*potensi section*/}
-                <div className="">
+                <div id="potensi" className="">
                     <div className=" px-20 pt-20 flex flex-col items-center justify-center text-slate-800 ">
                         <h1 className="text-4xl font-bold text-center mt-5 bg-teal-">
                             Potensi Daerah
@@ -155,205 +170,259 @@ export default function Home() {
                             elit. Quisquam, voluptatibus.
                         </p>
                     </div>
-                    <div className="flex item-center justify-center md:p-10">
+                    <div
+                        id="potensi-list-horizontal"
+                        className="flex item-center justify-center md:p-10"
+                    >
                         <Slider className="bg-slate-100" />
                     </div>
                 </div>
 
-                {/* <div className="hidden md:flex carousel carousel-left min-w-64 max-w-md  space-x-4 bg-slate-100 shadow-xl rounded-box">
-                    <div id="item1" className="carousel-item">
-                        <CardPotensi
-                            title="Pertanian"
-                            description="Lihat selengkapnya"
-                            number={1}
-                        />
-                    </div>
-                    <div id="item2" className="carousel-item">
-                        <CardPotensi
-                            title="Perkebunan"
-                            description="Lihat selengkapnya"
-                            number={2}
-                        />
-                    </div>
-                    <div id="item3" className="carousel-item">
-                        <CardPotensi
-                            title="Perikanan"
-                            description="Lorem ipsum dolor sit."
-                            number={3}
-                        />
-                    </div>
-                    <div id="item4" className="carousel-item">
-                        <CardPotensi
-                            title="Pariwisata"
-                            description="Lorem ipsum dolor sit."
-                            number={4}
-                        />
-                    </div>
-                    <div id="item5" className="carousel-item">
-                        <CardPotensi
-                            title="Produk Unggulan"
-                            description="Lorem ipsum dolor sit."
-                            number={5}
-                        />
-                    </div>
-                </div>
-                <div className="hidden md:flex justify-center items-center mt-4">
-                    <a
-                        href="#item1"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        1
-                    </a>
-                    <a
-                        href="#item2"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        2
-                    </a>
-                    <a
-                        href="#item3"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        3
-                    </a>
-                    <a
-                        href="#item4"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        4
-                    </a>
-                    <a
-                        href="#item5"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        5
-                    </a>
-                </div>
+                {/*Galeri Section*/}
+                <div></div>
 
-                <div className="flex md:hidden h-32 carousel carousel-vertical rounded-box ">
-                    <div id="item6" className="carousel-item h-full">
-                        <CardPotensi
-                            title="Pertanian"
-                            description="Lorem ipsum dolor sit."
-                            number={1}
-                        />
+                {/* <div className="flex justify-between items-center w-full bg-slate-300 text-slate-900">
+                    <div className="flex m-3">
+                        <Link href="/" className="flex">
+                            <Image
+                                src="/LogoNav.png"
+                                width={50}
+                                height={10}
+                                alt="Logo"
+                                className="mx-2"
+                            />
+                            <h1 className="text-xl font-bold flex justify-center items-center">
+                                Kediri Kabupaten
+                            </h1>
+                        </Link>
                     </div>
-                    <div id="item7" className="carousel-item h-full">
-                        <CardPotensi
-                            title="Perkebunan"
-                            description="Lorem ipsum dolor sit."
-                            number={2}
-                        />
+
+                    <div>
+                        <div className="dropdown dropdown-end items-end text-slate-300 mr-10">
+                            <label tabIndex={0} className="btn m-1">
+                                Menu
+                            </label>
+                            <ul
+                                tabIndex={0}
+                                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                            >
+                                <li>
+                                    <Link href="/profil">Profil</Link>
+                                </li>
+                                <li>
+                                    <Link href="/berita">Fasilitas</Link>
+                                </li>
+                                <li>
+                                    <Link href="/fasilitas">Fasilitas</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="item8" className="carousel-item h-full">
-                        <CardPotensi
-                            title="Perikanan"
-                            description="Lorem ipsum dolor sit."
-                            number={3}
-                        />
-                    </div>
-                    <div id="item9" className="carousel-item h-full">
-                        <CardPotensi
-                            title="Pariwisata"
-                            description="Lorem ipsum dolor sit."
-                            number={4}
-                        />
-                    </div>
-                    <div id="item10" className="carousel-item h-full">
-                        <CardPotensi
-                            title="Produk Unggulan"
-                            description="Lorem ipsum dolor sit."
-                            number={5}
-                        />
-                    </div>
-                </div>
-                <div className="flex md:hidden justify-center items-center mt-4">
-                    <a
-                        href="#item6"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        1
-                    </a>
-                    <a
-                        href="#item7"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        2
-                    </a>
-                    <a
-                        href="#item8"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        3
-                    </a>
-                    <a
-                        href="#item9"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        4
-                    </a>
-                    <a
-                        href="#item10"
-                        className="mx-2 text-slate-300 bg-slate-700 px-2 py-1 rounded-md"
-                    >
-                        5
-                    </a>
                 </div> */}
 
-                {/* <div className="card card-side bg-base-100 shadow-xl mx-40 h-60 mb-20">
-                    <figure className="">
-                        <Image src={src} width={400} height={100} alt="Movie" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">{title}</h2>
-                        <ul>
-                            <li>
-                                <a href={link1}>{desc1}</a>
-                            </li>
-                            <li>
-                                <a href={link2}>{desc2}</a>
-                            </li>
-                            <li>
-                                <a href={link3}>{desc3}</a>
-                            </li>
-                            <li>
-                                <a href={link4}>{desc4}</a>
-                            </li>
-                            <li>
-                                <a href={link5}>{desc5}</a>
-                            </li>
-                        </ul>
+                {/* <div className="carousel hidden lg:flex w-full">
+                    <div
+                        id="slide1"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-300 bg-opacity-50 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Pertanian</h2>
+                                <p>Lihat Selengkapnya</p>
+                            </div>
+                        </div>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 px-10 left-10 right-10 top-1/2">
+                            <a href="#slide4" className="btn btn-circle">
+                                ❮
+                            </a>
+                            <a href="#slide2" className="btn btn-circle">
+                                ❯
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        id="slide2"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-300 bg-opacity-50 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Perkebunan</h2>
+                                <p>
+                                    If a dog chews shoes whose shoes does he
+                                    choose?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 px-10 left-10 right-10 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">
+                                ❮
+                            </a>
+                            <a href="#slide3" className="btn btn-circle">
+                                ❯
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        id="slide3"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-300 bg-opacity-50 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Perikanan</h2>
+                                <p>
+                                    If a dog chews shoes whose shoes does he
+                                    choose?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 px-10 left-10 right-10 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">
+                                ❮
+                            </a>
+                            <a href="#slide4" className="btn btn-circle">
+                                ❯
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        id="slide4"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-300 bg-opacity-50 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Pariwisata</h2>
+                                <p>
+                                    If a dog chews shoes whose shoes does he
+                                    choose?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 px-10 left-10 right-10 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">
+                                ❮
+                            </a>
+                            <a href="#slide1" className="btn btn-circle">
+                                ❯
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="flex md:hidden">
-                <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                    <figure>
-                        <Image src={src} width={400} height={100} alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">{title}</h2>
-                        <ul>
-                            <li>
-                                <a href={link1}>{desc1}</a>
-                            </li>
-                            <li>
-                                <a href={link2}>{desc2}</a>
-                            </li>
-                            <li>
-                                <a href={link3}>{desc3}</a>
-                            </li>
-                            <li>
-                                <a href={link4}>{desc4}</a>
-                            </li>
-                            <li>
-                                <a href={link5}>{desc5}</a>
-                            </li>
-                        </ul>
+                <div className="carousel flex lg:hidden w-96 ">
+                    <div
+                        id="slide1"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-200 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Pertanian</h2>
+                                <p className="mt-3">
+                                    Kabupaten Kediri memiliki potensi perikanan
+                                    yang cukup besar. Terdapat 124 desa di
+                                    Kabupaten Kediri yang merupakan desa potensi
+                                    perikanan. Kegiatan perikanan di Kabupaten
+                                    Kediri terdiri dari pembenihan ikan,
+                                    budidaya ikan konsumsi, budidaya ikan hias,
+                                    dan penangkapan ikan di perairan umum
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div> */}
+                    <div
+                        id="slide2"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-200 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Perkebunan</h2>
+                                <p className="mt-3">
+                                    Kabupaten Kediri adalah sebuah kabupaten di
+                                    Jawa Timur, Indonesia. Wilayah ini terkenal
+                                    dengan hasil pertaniannya, termasuk tebu,
+                                    kakao, kopi, kelapa, dan cengkeh. Pada tahun
+                                    2014, total area perkebunan di kabupaten ini
+                                    adalah 20.933 hektar, dengan total produksi
+                                    209.330 ton tebu. Kabupaten ini memiliki
+                                    sejumlah besar pabrik gula yang memproduksi
+                                    gula merah 1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="slide3"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-200 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Perikanan</h2>
+                                <p className="mt-3">
+                                    Kabupaten Kediri terletak di bagian timur
+                                    Provinsi Jawa Timur dan memiliki garis
+                                    pantai sekitar 40 km di sepanjang Laut Jawa.
+                                    Dinas Perikanan Kabupaten Kediri bertanggung
+                                    jawab untuk melaksanakan kebijakan
+                                    pemerintah daerah di bidang perikanan. Dinas
+                                    ini dikepalai oleh NUR HAFID S.Pt, MM dan
+                                    beralamat di Jalan Pamenang No. 40 Kediri 1.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="slide4"
+                        className="carousel-item justify-center relative w-full text-slate-900"
+                    >
+                        <div className="card w-96 bg-slate-200 shadow-xl">
+                            <div className="card-body">
+                                <h2 className="card-title">Pariwisata</h2>
+                                <p className="mt-3">
+                                    Kabupaten Kediri, yang terletak di Jawa
+                                    Timur, Indonesia, merupakan tujuan wisata
+                                    populer dengan warisan budaya yang kaya.
+                                    Situs resmi Dinas Pariwisata dan Kebudayaan
+                                    Kabupaten Kediri menyediakan informasi
+                                    tentang berbagai tempat wisata di wilayah
+                                    ini, termasuk keajaiban alam, situs
+                                    bersejarah, dan acara budaya.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+
+                {/* <div className="flex ">
+                    <div className="card card-compact w-96 shadow-xl m-5  bg-slate-200 text-slate-900 ">
+                        <figure>
+                            <Image
+                                src={src}
+                                width={400}
+                                height={100}
+                                alt="Shoes"
+                            />
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title">haha</h2>
+                            <ul>
+                                <li>
+                                    <a href="">haha</a>
+                                </li>
+                                <li>
+                                    <a href="">haha</a>
+                                </li>
+                                <li>
+                                    <a href="">haha</a>
+                                </li>
+                                <li>
+                                    <a href="">haha</a>
+                                </li>
+                                <li>
+                                    <a href="">haha</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> */}
 
                 <div></div>
             </div>

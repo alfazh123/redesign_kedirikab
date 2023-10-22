@@ -22,12 +22,6 @@ export default function berita1() {
                             width={300}
                             height={300}
                         />
-                        <Image
-                            className="md:mx-2 my-3"
-                            src="/berita1_2.png"
-                            width={300}
-                            height={300}
-                        />
                     </div>
 
                     <p className="mt-5">
@@ -52,6 +46,15 @@ export default function berita1() {
                         Dhito serius untuk melakukan pengawasan terhadap petani
                         mangga podang.{' '}
                     </p>
+
+                    <div className="flex md:flex-row flex-col justify-center items-center">
+                        <Image
+                            className="md:mx-2 my-3"
+                            src="/berita1_2.png"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
 
                     <p>
                         Pengawasan itu untuk menjaga petani tidak melakukan
