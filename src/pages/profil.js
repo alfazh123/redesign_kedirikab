@@ -13,19 +13,26 @@ export default function Profil() {
                     Profil Kabupaten
                 </h1>
 
-                <div className="flex justify-center pt-20">
+                <div
+                    id="profil-bupati-wabupati"
+                    className="flex justify-center pt-20"
+                >
                     <ul className="flex md:flex-row flex-col">
                         <li className="mx-5 mb-5">
                             <div className="card card-compact w-62 bg-slate-300 shadow-xl">
                                 <figure>
                                     <Image
                                         src="/bupatikedirikab.png"
+                                        id="image-bupati"
                                         alt="Shoes"
                                         width={300}
                                         height={200}
                                     />
                                 </figure>
-                                <div className="card-body">
+                                <div
+                                    id="profil-singkat-bupati"
+                                    className="card-body"
+                                >
                                     <h2 className="card-title">
                                         Hanindhito Himawan Pramana, S.H.
                                     </h2>
@@ -38,12 +45,16 @@ export default function Profil() {
                                 <figure>
                                     <Image
                                         src="/wabubkedirikab.png"
+                                        id="image-wabupati"
                                         alt="Shoes"
                                         width={300}
                                         height={200}
                                     />
                                 </figure>
-                                <div className="card-body">
+                                <div
+                                    id="profil-singkat-wabup"
+                                    className="card-body"
+                                >
                                     <h2 className="card-title">
                                         Dewi Mariya Ulfa, S.T.
                                     </h2>
@@ -56,10 +67,14 @@ export default function Profil() {
             </div>
 
             <div className="bg-gradient-to-t from-slate-300 to-cyan-700">
-                <div className="flex min-h-screen justify-center items-center pt-20 pb-48">
+                <div
+                    id="sejarah-section"
+                    className="flex min-h-screen justify-center items-center pt-20 pb-48"
+                >
                     <div className="flex lg:flex-row flex-col justify-center items-center lg:mx-32 md:mx-20 mx-10">
                         <Image
                             src="/sejarahimg.png"
+                            id="image-candi-kedirikab"
                             alt="Shoes"
                             width={300}
                             height={300}
@@ -89,7 +104,7 @@ export default function Profil() {
                     </div>
                 </div>
 
-                <div className=" text-slate-900">
+                <div id="filosofi-logo" className=" text-slate-900">
                     <h1 className="flex justify-center font-bold text-6xl mb-2">
                         Logo
                     </h1>
@@ -97,12 +112,13 @@ export default function Profil() {
                     <div className="flex md:flex-row items-center flex-col mx-10 mt-10 justify-center">
                         <Image
                             src="/Logo.png"
+                            id="image-logo-kedirikab"
                             alt="Logo kabupaten kediri"
                             width={300}
                             height={300}
                         />
 
-                        <ul className="md:mx-10 mx-">
+                        <ul id="list-filosofi" className="md:mx-10 mx-">
                             <li>
                                 <h1 className="text-xl font-bold">
                                     Bintang Sudut Lima
