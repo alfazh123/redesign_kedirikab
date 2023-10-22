@@ -7,11 +7,17 @@ export default function Layanan() {
     return (
         <div className="flex flex-col justify-center bg-gradient-to-t from-cyan-700 to-slate-300 min-h-screen">
             <Navbar />
-            <h1 className="text-slate-800 text-4xl font-bold m-10">
+            <h1
+                id="hero-fasilitas"
+                className="text-slate-800 text-4xl font-bold m-10"
+            >
                 Halaman Fasilitas
             </h1>
 
-            <div className="flex xl:flex-row flex-col  justify-center mx-auto  lg:mb-10">
+            <div
+                id="fasilitas-list"
+                className="flex xl:flex-row flex-col  justify-center mx-auto  lg:mb-10"
+            >
                 <CardFasilitasList
                     title="Rumah Sakit"
                     desc1="RSUD Kabupaten Kediri, Jl. Pahlawan Kusuma Bangsa I Pare"

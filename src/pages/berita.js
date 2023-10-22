@@ -15,7 +15,7 @@ export default function Berita() {
                     Halaman Berita
                 </h1>
 
-                <div>
+                <div id="berita-hero">
                     <h1 className="md:mx-36 text-lg mx-10 md:mt-20 mt-5">
                         Berita Terkini
                     </h1>
@@ -70,7 +70,10 @@ export default function Berita() {
                 </div>
             </div>
 
-            <div className="bg-gradient-to-t from-slate-300 to-cyan-700 pb-20">
+            <div
+                id="berita-list-vertical"
+                className="bg-gradient-to-t from-slate-300 to-cyan-700 pb-20"
+            >
                 <div className="lg:mx-28 md:mx-16 sm:mx-10 mx-5 px-10 py-5  text-slate-700 bg-slate-400 shadow-2xl rounded-xl">
                     <ul>
                         <li>
