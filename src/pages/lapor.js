@@ -24,72 +24,77 @@ export default function Lapor() {
                             Masukkan Informasi sesuai dengan kolom yang tersedia
                         </p>
 
-                        {/* <div>
-                        <ul className="flex">
-                            <li>
-                                <button className="rounded-none border-solid border-cyan-700 border-2 focus:bg-cyan-700">
-                                    Pengaduhan
-                                </button>
-                                <a className="px-3 py-2 border-solid border-cyan-400 border-2 focus:bg-cyan-500 hover:bg-cyan-500 hover:text-slate-200">
-                                    Pengaduhan
-                                </a>
-                            </li>
-                            <li>
-                                <button className="btn rounded-none border-solid border-cyan-700 border-2">
-                                    Button
-                                </button>
-                            </li>
-                            <li>
-                                <button className="btn rounded-none border-solid border-cyan-700 border-2">
-                                    Button
-                                </button>
-                            </li>
-                        </ul>
-                    </div> */}
-
                         <div className="flex flex-col text-slate-900 text-opacity-70">
-                            <label>Kategori</label>
-                            <select className="bg-white rounded-md m-2 px-4 py-3">
+                            <label id="label-kategori" name="label-kategori">
+                                Kategori
+                            </label>
+                            <select
+                                id="select-kategori"
+                                name="select-kategori"
+                                className="bg-white rounded-md m-2 px-4 py-3"
+                            >
                                 <option value="1">Pengaduan</option>
                                 <option value="2">Aspirasi</option>
                                 <option value="3">Permintaan Informasi</option>
                             </select>
-                            <label>Judul laporan</label>
+                            <label
+                                id="label-judul-laporan"
+                                name="label-judul-laporan"
+                            >
+                                Judul laporan
+                            </label>
                             <input
                                 type="text"
-                                id="judulLaporan"
-                                name="judulLaporan"
+                                id="judul-Laporan"
+                                name="judul-Laporan"
                                 placeholder="Ketik Judul laporan Anda"
                                 className="bg-white rounded-md m-2 px-4 py-3"
                             />
+
                             <label>Keterangan</label>
                             <input
                                 type="text"
-                                id="judulLaporan"
-                                name="judulLaporan"
+                                id="isi-laporan"
+                                name="isi-Laporan"
                                 placeholder="Ketik Isi laporan Anda"
                                 className="bg-white rounded-md m-2 px-4 py-3"
                             />
-                            <label>Tanggal</label>
-                            <DatePicker className="bg-white rounded-md m-2 px-4 py-3" />
-                            <label>Lokasi</label>
+
+                            <label id="label-date" name="label-date">
+                                Tanggal
+                            </label>
+                            <DatePicker
+                                id="date-picker"
+                                name="date-picker"
+                                className="bg-white rounded-md m-2 px-4 py-3"
+                            />
+
+                            <label id="lebel-lokasi" name="label-lokasi">
+                                Lokasi
+                            </label>
                             <input
                                 type="text"
-                                id="judulLaporan"
-                                name="judulLaporan"
+                                id="location"
+                                name="location"
                                 placeholder="Jl. Soekarno-Hatta No. 1 Kediri"
                                 className="bg-white rounded-md m-2 px-4 py-3"
                             />
-                            <label>Instansi</label>
+                            <label id="lebel-instansi" name="label-instansi">
+                                Instansi
+                            </label>
                             <input
                                 type="text"
-                                id="judulLaporan"
-                                name="judulLaporan"
+                                id="instansi"
+                                name="instansi"
                                 placeholder="Instansi Tujuan"
                                 className="rounded-md m-2 px-4 py-3"
                             />
 
-                            <div className="card-actions justify-end">
+                            <div
+                                id="submit-laporan-button"
+                                name="sumbit-laopran-button"
+                                className="card-actions justify-end"
+                            >
                                 <button className="btn px-5 py-1 rounded-full  hover:bg-slate-300 hover:text-slate-900 bg-cyan-700 text-slate-100">
                                     Lapor
                                 </button>
