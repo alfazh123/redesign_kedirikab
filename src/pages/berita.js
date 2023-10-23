@@ -4,10 +4,18 @@ import CardBeritaVertikal from '@/component/cardBeritaVertikal';
 import Footer from '@/component/footer';
 import Link from 'next/link';
 import Navbar from '@/component/navbar';
+import Head from 'next/head';
 
 export default function Berita() {
     return (
         <main>
+            <Head>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <title>Berita</title>
+            </Head>
             <Navbar />
 
             <div className="bg-gradient-to-t from-cyan-700 to-slate-300 text-black min-h-screen">
@@ -27,9 +35,7 @@ export default function Berita() {
                                     title={
                                         'KPK RI Gelar Sosialisasi Anti Korupsi'
                                     }
-                                    image={
-                                        'https://berita.kedirikab.go.id/asset/foto_berita/KPK_(3).jpeg'
-                                    }
+                                    image={'/berita1_0.png'}
                                     description={
                                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.'
                                     }
@@ -42,9 +48,7 @@ export default function Berita() {
                                     title={
                                         'Antisipasi Dampak Kekeringan, Gubernur Khofifah Harap Kepala Daerah Upayakan Mitigasi Bencana'
                                     }
-                                    image={
-                                        'https://berita.kedirikab.go.id/asset/foto_berita/bpsdm_(2).jpeg'
-                                    }
+                                    image={'berita2_0.png'}
                                     description={
                                         'Antisipasi Dampak Kekeringan, Gubernur Khofifah Harap Kepala Daerah Upayakan Mitigasi Bencana'
                                     }
@@ -57,9 +61,7 @@ export default function Berita() {
                                     title={
                                         'Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di Booster'
                                     }
-                                    image={
-                                        'https://berita.kedirikab.go.id/asset/foto_berita/mangga_(3).jpeg'
-                                    }
+                                    image={'berita3_0.png'}
                                     description={
                                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.'
                                     }
