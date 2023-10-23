@@ -12,6 +12,10 @@ export default function Home() {
     return (
         <main className={` ${inter.className}`}>
             <Head>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
                 <title>Kediri Kabupaten</title>
             </Head>
             <div className="min-h-screen flex flex-col text-center justify-center">
@@ -102,8 +106,10 @@ export default function Home() {
                                 <Link href="/berita/berita2">
                                     <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 shadow-xl sm:w-72 bg-white">
                                         <figure>
-                                            <img
-                                                src="https://berita.kedirikab.go.id/asset/foto_berita/KPK_(3).jpeg"
+                                            <Image
+                                                src="/berita1_0.png"
+                                                width={500}
+                                                height={400}
                                                 alt="berita1"
                                             />
                                         </figure>
@@ -121,8 +127,10 @@ export default function Home() {
                                 <Link href="/berita/berita3">
                                     <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
                                         <figure>
-                                            <img
-                                                src="https://berita.kedirikab.go.id/asset/foto_berita/bpsdm_(2).jpeg"
+                                            <Image
+                                                src="/berita2_0.png"
+                                                width={500}
+                                                height={400}
                                                 alt="berita2"
                                             />
                                         </figure>
@@ -141,8 +149,10 @@ export default function Home() {
                                 <Link href="/berita/berita1">
                                     <div className="card md:w-92 lg:w-62 lg:min-h-52 md:mx-4 w-64 bg-white shadow-xl sm:w-72">
                                         <figure>
-                                            <img
-                                                src="https://berita.kedirikab.go.id/asset/foto_berita/mangga_(3).jpeg"
+                                            <Image
+                                                src="/berita3_0.png"
+                                                width={500}
+                                                height={400}
                                                 alt="berita3"
                                             />
                                         </figure>
@@ -179,7 +189,39 @@ export default function Home() {
                 </div>
 
                 {/*Galeri Section*/}
-                <div></div>
+                <div className="flex justify-center">
+                    <h1>Galeri</h1>
+                </div>
+                <div className="flex justify-center box-border rounded-md">
+                    <div className="grid grid-cols-2 justify-center max-w-2xl items-center">
+                        <Image
+                            src="/headline_berita1.png"
+                            className="rounded-lt-lg"
+                            width={500}
+                            height={400}
+                            alt="Photo"
+                        />
+                        <Image
+                            src="/headline_berita2.png"
+                            width={500}
+                            height={400}
+                            alt="Photo"
+                        />
+
+                        <Image
+                            src="/headline_berita3.png"
+                            width={500}
+                            height={400}
+                            alt="Photo"
+                        />
+                        <Image
+                            src="/headline_berita4.png"
+                            width={500}
+                            height={400}
+                            alt="Photo"
+                        />
+                    </div>
+                </div>
 
                 {/* <div className="flex justify-between items-center w-full bg-slate-300 text-slate-900">
                     <div className="flex m-3">
@@ -423,8 +465,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div> */}
-
-                <div></div>
             </div>
 
             <Footer />
