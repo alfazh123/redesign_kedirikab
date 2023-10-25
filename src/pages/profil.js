@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/component/navbar';
 import Footer from '@/component/footer';
+import ModalImage from '@/component/ModalImage';
 
 export default function Profil() {
     return (
@@ -19,26 +20,24 @@ export default function Profil() {
                 >
                     <ul className="flex md:flex-row flex-col">
                         <li className="mx-5 mb-5">
-                            <div className="card card-compact w-62 bg-slate-300 shadow-xl">
-                                <figure>
-                                    <Image
-                                        src="/bupatikedirikab.png"
-                                        id="image-bupati"
-                                        alt="Shoes"
-                                        width={300}
-                                        height={200}
-                                    />
-                                </figure>
-                                <div
-                                    id="profil-singkat-bupati"
-                                    className="card-body"
-                                >
-                                    <h2 className="card-title">
-                                        Hanindhito Himawan Pramana, S.H.
-                                    </h2>
-                                    <p>Bupati Kab. Kediri</p>
-                                </div>
-                            </div>
+                            <ModalImage
+                                src="/bupatikedirikab.png"
+                                alt="Bupati Kediri"
+                                name="Hanindhito Himawan Pramana"
+                                position={'Bupati Kab. Kediri'}
+                                ttl={'Kediri, 31 Juli 1992'}
+                                alamat={
+                                    'Pendopo Kabupaten Kediri Jl. Panglima Sudirman No. 141 Kediri'
+                                }
+                                pend1={
+                                    'SD Islam Al Azhar 6 Jaka Permai (1998 - 2004)'
+                                }
+                                pend2={'SMP Labschool Kebayoran (2004 - 2007)'}
+                                pend3={'SMA Negeri 82 Jakarta (2007 - 2010)'}
+                                pend4={
+                                    'Fakultas Hukum Universitas Gajah Mada (2010 - 2017)'
+                                }
+                            />
                         </li>
                         <li className="mx-5">
                             <div className="card card-compact w-62 bg-slate-300 shadow-xl">
