@@ -175,14 +175,14 @@ export default function Home() {
                         <h1 className="text-4xl font-bold text-center mt-5 bg-teal-">
                             Potensi Daerah
                         </h1>
-                        <p className="text-sm text-center max-w-md">
+                        <p className="text-sm text-center max-w-md mb-10">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quisquam, voluptatibus.
                         </p>
                     </div>
                     <div
                         id="potensi-list-horizontal"
-                        className="flex item-center justify-center md:p-10"
+                        className="flex item-center justify-center m-10"
                     >
                         <Slider className="bg-slate-100" />
                     </div>
@@ -190,19 +190,22 @@ export default function Home() {
 
                 {/*Galeri Section*/}
                 <div className="flex justify-center">
-                    <h1>Galeri</h1>
+                    <h1 className="text-slate-900 font-bold text-4xl">
+                        Galeri
+                    </h1>
                 </div>
                 <div className="flex justify-center box-border rounded-md">
-                    <div className="grid grid-cols-2 justify-center max-w-2xl items-center">
+                    <div className="grid grid-cols-2 justify-center md:max-w-2xl max-w-xl p-10  items-center">
                         <Image
                             src="/headline_berita1.png"
-                            className="rounded-lt-lg"
+                            className="rounded-tl-xl"
                             width={500}
                             height={400}
                             alt="Photo"
                         />
                         <Image
                             src="/headline_berita2.png"
+                            className="rounded-tr-xl"
                             width={500}
                             height={400}
                             alt="Photo"
@@ -210,12 +213,14 @@ export default function Home() {
 
                         <Image
                             src="/headline_berita3.png"
+                            className="rounded-bl-xl"
                             width={500}
                             height={400}
                             alt="Photo"
                         />
                         <Image
                             src="/headline_berita4.png"
+                            className="rounded-br-xl"
                             width={500}
                             height={400}
                             alt="Photo"

@@ -52,7 +52,7 @@ export default function Lapor() {
                             />
 
                             <label>Keterangan</label>
-                            <input
+                            <textarea
                                 type="text"
                                 id="isi-laporan"
                                 name="isi-Laporan"

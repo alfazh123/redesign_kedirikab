@@ -10,7 +10,7 @@ export default function Slider() {
                     id="slide1"
                     className="carousel-item justify-center relative w-full text-slate-900"
                 >
-                    <div className="card w-96 bg-slate-200">
+                    <div className="card w- bg-slate-200">
                         <div className="card-body">
                             <h2 className="card-title">Pertanian</h2>
                             <p className="mt-3">

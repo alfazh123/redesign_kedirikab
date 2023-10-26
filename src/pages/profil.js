@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/component/navbar';
 import Footer from '@/component/footer';
+import ModalImage from '@/component/ModalImage';
 
 export default function Profil() {
     return (
@@ -19,48 +20,215 @@ export default function Profil() {
                 >
                     <ul className="flex md:flex-row flex-col">
                         <li className="mx-5 mb-5">
-                            <div className="card card-compact w-62 bg-slate-300 shadow-xl">
-                                <figure>
-                                    <Image
-                                        src="/bupatikedirikab.png"
-                                        id="image-bupati"
-                                        alt="Shoes"
-                                        width={300}
-                                        height={200}
-                                    />
-                                </figure>
-                                <div
-                                    id="profil-singkat-bupati"
-                                    className="card-body"
-                                >
-                                    <h2 className="card-title">
-                                        Hanindhito Himawan Pramana, S.H.
-                                    </h2>
-                                    <p>Bupati Kab. Kediri</p>
+                            <button
+                                onClick={() =>
+                                    document
+                                        .getElementById('my_modal_4')
+                                        .showModal()
+                                }
+                            >
+                                <div className="card card-compact w-62 p-5 bg-slate-300 shadow-xl">
+                                    <figure>
+                                        <Image
+                                            src="/bupatikedirikab.png"
+                                            id="figure"
+                                            alt="Bupati Kediri"
+                                            width={300}
+                                            height={200}
+                                        />
+                                    </figure>
+                                    <div
+                                        id="profil-singkat-bupati"
+                                        className="card-body"
+                                    >
+                                        <h2 className="card-title">
+                                            Hanindhito Himawan Pramana, S.H.
+                                        </h2>
+                                        <p>Bupati Kab. Kediri</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </button>
+                            <dialog
+                                id="my_modal_4"
+                                className="modal flex justify-center bg-slate-500 bg-opacity-50"
+                            >
+                                <div className="modal-box min-w-max max-w-5xl bg-slate-300">
+                                    <div className="flex flex-col bg-slate-300 justify-center p-4 rounded-md max-w-md">
+                                        <div className="flex justify-center">
+                                            <Image
+                                                src="/bupatikedirikab.png"
+                                                id="figure"
+                                                alt="Bupati Kediri"
+                                                width={300}
+                                                height={200}
+                                            />
+                                        </div>
+
+                                        <ul className="py-5">
+                                            <li>
+                                                <p>
+                                                    Tempat/Tanggal lahir :
+                                                    Kediri, 31 Juli 1992
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Alamat : Pendopo Kabupaten
+                                                    Kediri Jl. Panglima Sudirman
+                                                    No. 141 Kediri
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h3>
+                                                    Riwayat Pendidikan :
+                                                    <br></br>
+                                                </h3>
+                                                <ul className="list-disc pl-10">
+                                                    <li>
+                                                        <p>
+                                                            SD Islam Al Azhar 6
+                                                            Jaka Permai (1998 -
+                                                            2004)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            SMP Labschool
+                                                            Kebayoran (2004 -
+                                                            2007)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            SMA Negeri 82
+                                                            Jakarta (2007 -
+                                                            2010)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Fakultas Hukum
+                                                            Universitas Gajah
+                                                            Mada (2010 - 2017)
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="modal-action">
+                                        <form method="dialog">
+                                            <button className="btn">
+                                                Close
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </li>
                         <li className="mx-5">
-                            <div className="card card-compact w-62 bg-slate-300 shadow-xl">
-                                <figure>
-                                    <Image
-                                        src="/wabubkedirikab.png"
-                                        id="image-wabupati"
-                                        alt="Shoes"
-                                        width={300}
-                                        height={200}
-                                    />
-                                </figure>
-                                <div
-                                    id="profil-singkat-wabup"
-                                    className="card-body"
-                                >
-                                    <h2 className="card-title">
-                                        Dewi Mariya Ulfa, S.T.
-                                    </h2>
-                                    <p>Wakil Bupati Kab. Kediri</p>
+                            <button
+                                onClick={() =>
+                                    document
+                                        .getElementById('my_modal_5')
+                                        .showModal()
+                                }
+                            >
+                                <div className="card card-compact w-62 p-5 bg-slate-300 shadow-xl">
+                                    <figure>
+                                        <Image
+                                            src="/wabubkedirikab.png"
+                                            id="figure"
+                                            alt="Wakil Bupati Kab. Kediri"
+                                            width={300}
+                                            height={200}
+                                        />
+                                    </figure>
+                                    <div
+                                        id="profil-singkat-bupati"
+                                        className="card-body"
+                                    >
+                                        <h2 className="card-title">
+                                            Dewi Mariya Ulfa, S.T.
+                                        </h2>
+                                        <p>Wakil Bupati Kab. Kediri</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </button>
+                            <dialog
+                                id="my_modal_5"
+                                className="modal flex justify-center bg-slate-500 bg-opacity-50"
+                            >
+                                <div className="modal-box min-w-max max-w-5xl bg-slate-300">
+                                    <div className="flex flex-col bg-slate-300 justify-center p-4 rounded-md max-w-md">
+                                        <div className="flex justify-center">
+                                            <Image
+                                                src="/wabubkedirikab.png"
+                                                id="figure"
+                                                alt="Wakil Bupati Kab. Kediri"
+                                                width={300}
+                                                height={200}
+                                            />
+                                        </div>
+
+                                        <ul className="py-5">
+                                            <li>
+                                                <p>
+                                                    Tempat/Tanggal lahir :
+                                                    Kediri, 1 September 1980
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Alamat : Kediri</p>
+                                            </li>
+                                            <li>
+                                                <h3>
+                                                    Riwayat Pendidikan :
+                                                    <br></br>
+                                                </h3>
+                                                <ul className="list-disc pl-10">
+                                                    <li>
+                                                        <p>
+                                                            SD Negeri Jambean
+                                                            (1987 - 1993)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            SMP Negeri 1
+                                                            Ngadiluwih (1993 -
+                                                            1996)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            SMA Negeri 4 Kediri
+                                                            (1996 - 1999)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            S-1 Teknik Elektro,
+                                                            Institut Teknologi
+                                                            Sepuluh Nopember
+                                                            (2002 - 2005)
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="modal-action">
+                                        <form method="dialog">
+                                            <button className="btn">
+                                                Close
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </li>
                     </ul>
                 </div>
