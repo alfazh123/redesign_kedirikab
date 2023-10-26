@@ -4,7 +4,6 @@ import Slider from '../component/slider';
 import Footer from '@/component/footer';
 import Link from 'next/link';
 import Head from 'next/head';
-import CardPotensi from '@/component/cardPotensi';
 
 const inter = Inter({ subsets: ['latin'] });
 

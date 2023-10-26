@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Datetime from 'react-datetime';
-import { AiOutlineCalendar } from 'react-icons/ai';
 import 'react-datetime/css/react-datetime.css';
 
 export default function DatePicker() {

@@ -1,6 +1,4 @@
 import React from 'react';
-import CardPotensi from './cardPotensi';
-import Link from 'next/link';
 
 export default function Slider() {
     return (
