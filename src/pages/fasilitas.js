@@ -25,7 +25,7 @@ export default function Layanan() {
                     desc3="RS PTPN XXI Toeloengredjo,	Jl. A Yani No. 25 Pare Kediri"
                     desc4="RS Amelia,	Jl. Pahlawan No.25A Pare Kediri"
                     desc5="RSU PTPN XXI,	Jl. A Yani No. 25 Pare Kediri"
-                    src="/kediri.png"
+                    src="/Rsud.png"
                     link1={
                         'https://www.google.com/maps/place/RSUD+Kabupaten+Kediri/@-7.7597725,112.1760884,15z/data=!4m6!3m5!1s0x2e785c465edfdbc1:0x427b3c8412d38b42!8m2!3d-7.7597725!4d112.1760884!16s%2Fg%2F11c5_mgykh?entry=ttu'
                     }
@@ -50,7 +50,7 @@ export default function Layanan() {
                     desc3="BANK BRI,	Jl KDP Slamet A 35-37 Kediri"
                     desc4="BANK BRI SYARIAH,	Jl Kusuma Bangsa 2 Kediri"
                     desc5="BANK BNI,	Jl Brawijaya 17 Kediri"
-                    src="/kediri.png"
+                    src="/Bank.png"
                     link1={
                         'https://www.google.com/maps/place/Bank+Indonesia+Cab.+Kediri/@-7.8141708,112.0138795,15z/data=!4m2!3m1!1s0x0:0x1aa7816763c886b3?sa=X&ved=2ahUKEwib47XspYKCAxVpZmwGHcW0CCEQ_BJ6BAhCEAA&ved=2ahUKEwib47XspYKCAxVpZmwGHcW0CCEQ_BJ6BAhOEAg'
                     }
@@ -75,7 +75,7 @@ export default function Layanan() {
                     desc3="HOTEL PENATARAN, Jl Dhoho 190 Kediri"
                     desc4="HOTEL INSUMO PALACE, Jl Urip Sumoharjo 90 Kediri "
                     desc5="HOTEL BUKIT DAUN, JL Argo Wilis 777 Kediri"
-                    src="/kediri.png"
+                    src="/Hotel.png"
                     link1={
                         'https://www.google.com/maps/place/Grand+Surya+Hotel+Kediri/@-7.817707,112.0132129,15z/data=!4m2!3m1!1s0x0:0x31a5250470d9f02b?sa=X&ved=2ahUKEwjD2bLqpoKCAxUBTGwGHU7RDIUQ_BJ6BAhcEAA&ved=2ahUKEwjD2bLqpoKCAxUBTGwGHU7RDIUQ_BJ6BAhkEAc'
                     }
