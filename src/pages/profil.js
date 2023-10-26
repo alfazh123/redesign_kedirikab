@@ -18,7 +18,7 @@ export default function Profil() {
                     id="profil-bupati-wabupati"
                     className="flex justify-center pt-20"
                 >
-                    <ul className="flex md:flex-row flex-col">
+                    <ul className="flex md:flex-row flex-col justify-center">
                         <li className="mx-5 mb-5">
                             <button
                                 onClick={() =>
@@ -27,7 +27,7 @@ export default function Profil() {
                                         .showModal()
                                 }
                             >
-                                <div className="card card-compact w-62 p-5 bg-slate-300 shadow-xl">
+                                <div className="card card-compact w-96 p-5 bg-slate-300 shadow-xl">
                                     <figure>
                                         <Image
                                             src="/bupatikedirikab.png"
@@ -41,7 +41,7 @@ export default function Profil() {
                                         id="profil-singkat-bupati"
                                         className="card-body"
                                     >
-                                        <h2 className="card-title">
+                                        <h2 className="card-title justify-center text-md">
                                             Hanindhito Himawan Pramana, S.H.
                                         </h2>
                                         <p>Bupati Kab. Kediri</p>
@@ -52,9 +52,9 @@ export default function Profil() {
                                 id="my_modal_4"
                                 className="modal flex justify-center bg-slate-500 bg-opacity-50"
                             >
-                                <div className="modal-box min-w-max max-w-5xl bg-slate-300">
+                                <div className="modal-box min-w-max max-w-sm bg-slate-300">
                                     <div className="flex flex-col bg-slate-300 justify-center p-4 rounded-md max-w-md">
-                                        <div className="flex justify-center">
+                                        <div className="flex flex-col justify-center items-center text-center">
                                             <Image
                                                 src="/bupatikedirikab.png"
                                                 id="figure"
@@ -62,6 +62,16 @@ export default function Profil() {
                                                 width={300}
                                                 height={200}
                                             />
+                                            <div
+                                                id="profil-singkat-bupati"
+                                                className="card-body"
+                                            >
+                                                <h2 className="card-title justify-center text-md">
+                                                    Hanindhito Himawan Pramana,
+                                                    S.H.
+                                                </h2>
+                                                <p>Bupati Kab. Kediri</p>
+                                            </div>
                                         </div>
 
                                         <ul className="py-5">
@@ -135,7 +145,7 @@ export default function Profil() {
                                         .showModal()
                                 }
                             >
-                                <div className="card card-compact w-62 p-5 bg-slate-300 shadow-xl">
+                                <div className="card card-compact w-96 p-5 bg-slate-300 shadow-xl">
                                     <figure>
                                         <Image
                                             src="/wabubkedirikab.png"
@@ -149,7 +159,7 @@ export default function Profil() {
                                         id="profil-singkat-bupati"
                                         className="card-body"
                                     >
-                                        <h2 className="card-title">
+                                        <h2 className="card-title justify-center">
                                             Dewi Mariya Ulfa, S.T.
                                         </h2>
                                         <p>Wakil Bupati Kab. Kediri</p>
@@ -160,7 +170,7 @@ export default function Profil() {
                                 id="my_modal_5"
                                 className="modal flex justify-center bg-slate-500 bg-opacity-50"
                             >
-                                <div className="modal-box min-w-max max-w-5xl bg-slate-300">
+                                <div className="modal-box min-w-max max-w-sm bg-slate-300">
                                     <div className="flex flex-col bg-slate-300 justify-center p-4 rounded-md max-w-md">
                                         <div className="flex justify-center">
                                             <Image
