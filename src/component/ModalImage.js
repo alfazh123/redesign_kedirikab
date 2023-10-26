@@ -12,16 +12,13 @@ export default function ModalImage({
     pend2,
     pend3,
     pend4,
+    id,
 }) {
     return (
         <div>
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
 
-            <button
-                onClick={() =>
-                    document.getElementById('my_modal_4').showModal()
-                }
-            >
+            <button onClick={() => document.getElementById({ id }).showModal()}>
                 <div className="card card-compact w-62 p-5 bg-slate-300 shadow-xl">
                     <figure>
                         <Image
@@ -39,7 +36,7 @@ export default function ModalImage({
                 </div>
             </button>
             <dialog
-                id="my_modal_4"
+                id={id}
                 className="modal flex justify-center bg-slate-500 bg-opacity-50"
             >
                 <div className="modal-box min-w-max max-w-5xl bg-slate-300">
@@ -82,35 +79,6 @@ export default function ModalImage({
                             </li>
                         </ul>
                     </div>
-                    {/* <div className="card card-compact w-62 bg-slate-300 shadow-xl">
-                        <figure>
-                            <Image
-                                src={src}
-                                id="figure"
-                                alt={alt}
-                                width={300}
-                                height={200}
-                            />
-                        </figure>
-                        <div id="profil-singkat-bupati" className="card-body">
-                            <h2 className="card-title">
-                                Hanindhito Himawan Pramana, S.H.
-                            </h2>
-                            <p>Bupati Kab. Kediri</p>
-
-                            <ul>
-                                <li>
-                                    <p>Tempat/Tanggal lahir :</p>
-                                </li>
-                                <li>
-                                    <p>Agama :</p>
-                                </li>
-                                <li>
-                                    <p>Alamat :</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> */}
                     <div className="modal-action">
                         <form method="dialog">
                             {/* if there is a button, it will close the modal */}
