@@ -10,7 +10,7 @@ export default function berita1() {
             <Navbar />
             <div className="flex bg-gradient-to-b from-cyan-700 to-slate-300 min-h-screen justify-center items-center">
                 <div className=" text-slate-900 md:mx-40 mx-10 mb-10">
-                    <h1 className="font-bold text-2xl pb-5">
+                    <h1 className="font-bold text-2xl p-10 text-white">
                         Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di
                         Booster
                     </h1>
@@ -19,12 +19,12 @@ export default function berita1() {
                         <Image
                             className="md:mx-2 my-3"
                             src="/berita1_1.png"
-                            width={300}
-                            height={300}
+                            width={400}
+                            height={400}
                         />
                     </div>
 
-                    <p className="mt-5">
+                    <p className="mt-5 text-xl">
                         Kediri - Memasuki musim panen mangga podang, Bupati
                         Hanindhito Himawan Pramana melakukan pengecekan Pasar
                         Buah Banyakan, Kamis (5/10/2023) sore. Kedatangan orang
@@ -51,12 +51,12 @@ export default function berita1() {
                         <Image
                             className="md:mx-2 my-3"
                             src="/berita1_2.png"
-                            width={300}
-                            height={300}
+                            width={400}
+                            height={400}
                         />
                     </div>
 
-                    <p>
+                    <p className="text-xl pb-20">
                         Pengawasan itu untuk menjaga petani tidak melakukan
                         booster atau memacu buah supaya cepat matang dengan
                         ethrel. Dengan pengawasan yang dilakukan, diharapkan

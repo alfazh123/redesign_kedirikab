@@ -42,15 +42,15 @@ export default function Berita() {
                                 />
                             </Link>
                         </li>
-                        <li className="mx-5 sm:py-4 py-2">
+                        <li className="mx-5 sm:py-4 py-2 ">
                             <Link href="/berita/berita3">
                                 <CardBerita
                                     title={
-                                        'Antisipasi Dampak Kekeringan, Gubernur Khofifah Harap Kepala Daerah Upayakan Mitigasi Bencana'
+                                        'Mas Dhito Bakal Ajak Bupati Trenggalek Riding Bareng'
                                     }
-                                    image={'berita2_0.png'}
+                                    image={'/berita2_0.png'}
                                     description={
-                                        'Antisipasi Dampak Kekeringan, Gubernur Khofifah Harap Kepala Daerah Upayakan Mitigasi Bencana'
+                                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.'
                                     }
                                 />
                             </Link>
@@ -61,7 +61,7 @@ export default function Berita() {
                                     title={
                                         'Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di Booster'
                                     }
-                                    image={'berita3_0.png'}
+                                    image={'/berita3_0.png'}
                                     description={
                                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.'
                                     }
