@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Footer from '@/component/footer';
-import BeritaPage from '@/component/beritaPage';
 import Navbar from '@/component/navbar';
 
 export default function berita1() {

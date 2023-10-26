@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '@/component/footer';
-import { Label } from 'flowbite-react';
 import DatePicker from '@/component/datePicker';
 import Navbar from '@/component/navbar';
 
