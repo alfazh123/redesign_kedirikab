@@ -5,6 +5,7 @@ import Footer from '@/component/footer';
 import Link from 'next/link';
 import Head from 'next/head';
 import CardPotensi from '@/component/cardPotensi';
+import CardBerita from '@/component/cardBerita';
 
 const inter = Inter({ subsets: ['latin'] });
 

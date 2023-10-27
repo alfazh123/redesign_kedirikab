@@ -57,6 +57,15 @@ export default function Berita() {
                         </li>
                         <li className="mx-5 sm:py-4 py-2">
                             <Link href="/berita/berita1">
+                                {/* <CardBerita
+                                    title={
+                                        'Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di Booster'
+                                    }
+                                    image={'/berita3_0.png'}
+                                    description={
+                                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.'
+                                    }
+                                /> */}
                                 <CardBerita
                                     title={
                                         'Pesan Mas Dhito Bagi Petani Mangga Podang: Jangan Di Booster'
