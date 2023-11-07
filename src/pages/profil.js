@@ -6,6 +6,33 @@ import ModalImage from '@/component/ModalImage';
 import ButtonModalProfil from '@/component/buttonModalProfil';
 
 export default function Profil() {
+    const data_profile = [
+        {
+            title: 'Hanindhito Himawan Pramana, S.H.',
+            position: 'Bupati Kab. Kediri',
+            image: '/bupatikedirikab.png',
+            ttl: 'Kediri, 1 September 1980',
+            address: 'Kediri',
+            edu1: 'SD Negeri Jambean (1987 - 1993)',
+            edu2: 'SMP Negeri 1 Ngadiluwih (1993 - 1996)',
+            edu3: 'SMA Negeri 4 Kediri (1996 - 1999)',
+            edu4: 'S-1 Teknik Elektro, Institut Teknologi Sepuluh Nopember (2002 - 2005)',
+            modal: 'modal_4,',
+        },
+        {
+            title: 'Haryanti Sutrisno, S.E.',
+            position: 'Wakil Bupati Kab. Kediri',
+            image: '/wabubkedirikab.png',
+            ttl: 'Kediri, 1 September 1980',
+            address: 'Kediri',
+            edu1: 'SD Negeri Jambean (1987 - 1993)',
+            edu2: 'SMP Negeri 1 Ngadiluwih (1993 - 1996)',
+            edu3: 'SMA Negeri 4 Kediri (1996 - 1999)',
+            edu4: 'S-1 Teknik Elektro, Institut Teknologi Sepuluh Nopember (2002 - 2005)',
+            modal: 'modal_5',
+        },
+    ];
+
     return (
         <main>
             <Navbar />
@@ -19,6 +46,43 @@ export default function Profil() {
                     id="profil-bupati-wabupati"
                     className="flex justify-center pt-20"
                 >
+                    {/* <ul>
+                        {data_profile.map((data) => {
+                            return (
+                                <li>
+                                    <button
+                                        onClick={() =>
+                                            document
+                                                .getElementById(data.modal)
+                                                .showModal()
+                                        }
+                                    >
+                                        <ButtonModalProfil
+                                            title={data.title}
+                                            image={data.image}
+                                            description={data.position}
+                                        />
+                                    </button>
+                                    <dialog
+                                        id="{data.modal}"
+                                        className="modal flex justify-center bg-slate-500 bg-opacity-50"
+                                    >
+                                        <ModalImage
+                                            title={data.title}
+                                            image={data.image}
+                                            description={data.position}
+                                            address={data.address}
+                                            birth={data.ttl}
+                                            edu1={data.edu1}
+                                            edu2={data.edu2}
+                                            edu3={data.edu3}
+                                            edu4={data.edu4}
+                                        />
+                                    </dialog>
+                                </li>
+                            );
+                        })}
+                    </ul> */}
                     <ul className="flex md:flex-row flex-col justify-center">
                         <li className="mx-5 mb-5">
                             <button
